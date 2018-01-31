@@ -17,7 +17,7 @@
 }
 
 .about-page-content .content {
-  min-height: initial;
+  min-height: auto;
 }
 
 .about-page-title {
