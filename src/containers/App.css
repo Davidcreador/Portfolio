@@ -92,3 +92,15 @@ main {
 .close {
   transform: translateX(-140px);
 }
+
+.socials {
+  position: relative;
+  top: -20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.socials a {
+  color: #4a4a4a;
+}

@@ -17,15 +17,25 @@ export default class ProjectsPage extends Component {
               <div className="card-content">
                 <div className="media">
                   <div className="media-content">
-                    <p className="title">{e.name}</p>
+                    <p className="title">
+                      <a
+                        className="project-item-link"
+                        target="_blank"
+                        href={e.link}
+                      >
+                        {e.name}
+                      </a>
+                    </p>
                   </div>
                 </div>
 
-                <div className="content">
-                  {e.description}
-                </div>
+                <div className="content">{e.description}</div>
                 <div className="tags">
-                  {e.tags.map((t, i) => (<a className="tag" key={i} href="">#{t}</a>))}
+                  {e.tags.map((t, i) => (
+                    <a className="tag" key={i} href="">
+                      #{t}
+                    </a>
+                  ))}
                 </div>
               </div>
             </div>
@@ -33,7 +43,7 @@ export default class ProjectsPage extends Component {
         </li>
       );
     });
-  }
+  };
 
   render() {
     return (
@@ -45,6 +55,6 @@ export default class ProjectsPage extends Component {
           </ul>
         </div>
       </div>
-    )
+    );
   }
 }

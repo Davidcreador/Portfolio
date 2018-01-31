@@ -12,6 +12,10 @@
   box-shadow: 1px 6px 6px rgba(128, 128, 128, 0.1);
 }
 
+.project-item-link {
+  color: #4a4a4a;
+}
+
 .column {
   flex-wrap: wrap;
   align-items: stretch;
