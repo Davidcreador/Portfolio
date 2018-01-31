@@ -1,0 +1,94 @@
+body,
+html,
+#root {
+  font-family: 'Ubuntu', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  display: flex;
+  background-color: lightcyan;
+}
+
+.menu {
+  background-color: #fdfdfd;
+  padding: 20px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.menu-item.active {
+  background-color: lightcoral;
+  color: white;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.App {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+}
+
+.main-wrapper {
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 90%;
+  width: 90%;
+  margin: auto;
+  padding-left: 140px;
+  box-shadow: 1px 6px 18px rgba(128, 128, 128, 0.1);
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  height: 100%;
+}
+
+.switch-wrapper {
+  position: relative;
+  height: 100%;
+  box-shadow: -1px 6px 6px rgba(128, 128, 128, 0.1);
+  z-index: 2;
+}
+
+.switch-wrapper > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.close-btn {
+  position: absolute;
+  right: 16px;
+  cursor: pointer;
+}
+
+.close {
+  transform: translateX(-140px);
+}

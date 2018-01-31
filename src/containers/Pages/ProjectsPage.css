@@ -1,0 +1,32 @@
+.projects-page {
+  height: 100%;
+  padding: 40px;
+  overflow: scroll;
+}
+
+.project-item {
+  background-color: white;
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 1px 6px 6px rgba(128, 128, 128, 0.1);
+}
+
+.column {
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.bm--card-equal-height {
+  display:flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  min-height: 80px;
+}
+
+.tag {
+  display: inline-flex;
+}

@@ -1,0 +1,144 @@
+.about-page {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  flex-direction: row;
+}
+
+.about-page-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 0.5;
+  padding: 40px;
+  overflow: scroll;
+}
+
+.about-page-content .content {
+  min-height: initial;
+}
+
+.about-page-title {
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+.about-page-content p {
+  color: #b1b1b1;
+  font-size: 1.3rem;
+}
+
+.about-page-image {
+  background-image: url('./assets/me.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  flex: 0.5;
+}
+
+.skills-table {
+  background-color: white;
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 10px;
+  box-shadow: 1px 1px 18px rgba(128, 128, 128, 0.1);
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0 0 30px;
+}
+
+.skill-list li {
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.skill-list li a {
+  display: inline-flex;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+}
+
+.skill-item-logo {
+  width: 80px;
+  height: 40px;
+}
+
+.current-status {
+  margin: 30px 0;
+}
+
+.status-item {
+  position: relative;
+  background-color: white;
+  border: 1px solid #ececec;
+  padding: 15px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px rgba(128, 128, 128, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.status-item.status-active {
+  border-bottom: 2px solid lightseagreen;
+}
+
+.status-item:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 18px rgba(128, 128, 128, 0.1);
+}
+
+.status-item:not(:last-child):after {
+  content: '';
+  pointer-events: none;
+  height: 20px;
+  width: 2px;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.status-item:last-child {
+  margin-bottom: 0;
+}
+
+.status-item p {
+  font-size: 1rem;
+}
+
+.status-item-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.header-status-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.status-state {
+  background-color: lightseagreen;
+  color: white;
+  font-size: 0.9rem;
+  padding: 5px 20px;
+  border-radius: 20px;
+}

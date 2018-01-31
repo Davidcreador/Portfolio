@@ -1,0 +1,66 @@
+.hero {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.hero span {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.hero #DavidLogo {
+  width: 500px;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero #DavidLogo {
+    max-width: 100%;
+  } 
+}
+
+.hero-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-body .subtitle {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-top: 16px;
+}
+
+.hero path {
+  transition: all .3s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.hero path:hover {
+  fill: #16e9bd;
+}
+
+.fade-appear {
+  transform: translateY(-60px);
+  opacity: 0;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all .6s cubic-bezier(0.43, 0.3, 0.2, 0.82);
+}
+
+.fade-leave {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 0;
+  transform: translateY(-60px);
+  transition: all .6s cubic-bezier(0.43, 0.3, 0.2, 0.82);
+}
