@@ -49,7 +49,7 @@ export default class AboutPage extends Component {
       <div className="about-page">
         <div className="about-page-content">
           <h1 className="about-page-title title">I'm David Pastor</h1>
-          <div className="content">
+          <div className="about-content-body">
             <p>
               I am <strong>self-taught Software developer & Designer</strong>.{' '}
               <br /> Started as a graphic designer and then jumped into

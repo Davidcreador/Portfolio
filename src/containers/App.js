@@ -59,7 +59,7 @@ class App extends Component {
 
     return (
       <div
-        style={{ paddingLeft: this.state.expanded ? '140px' : '0' }}
+        style={{ paddingLeft: this.state.expanded ? '126px' : '0' }}
         className="main-wrapper"
       >
         {this.state.expanded ? (
