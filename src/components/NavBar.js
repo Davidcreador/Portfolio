@@ -14,6 +14,9 @@ const NavBar = ({ expanded }) => (
       <NavLink to="/projects" className="menu-item">
         Projects
       </NavLink>
+      <NavLink to="/contact" className="menu-item">
+        Contact
+      </NavLink>
     </ul>
     <ul className="socials">
       <li>
