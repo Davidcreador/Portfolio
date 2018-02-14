@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './FirstPage.css'
-import { Logo } from '../../components/Logo'
+import { Logo } from '../../../components/Logo'
 
 class FirstPage extends Component {
   render() {

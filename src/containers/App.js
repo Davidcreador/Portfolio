@@ -1,16 +1,18 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import { spring, AnimatedSwitch } from 'react-router-transition'
-import NavBar from '../components/NavBar'
-import './font-awesome.css'
 import 'bulma/css/bulma.css'
+import '../assets/css/font-awesome.css'
 import './App.css'
 
+// Shared Components
+import NavBar from '../components/NavBar'
+
 // Pages
-import FirstPage from './Pages/FirstPage'
-import AboutPage from './Pages/AboutPage'
-import ProjectsPage from './Pages/ProjectsPage'
-import ContactPage from './Pages/ContactPage'
+import FirstPage from './Pages/Home/FirstPage'
+import AboutPage from './Pages/About/AboutPage'
+import ProjectsPage from './Pages/Projects/ProjectsPage'
+import ContactPage from './Pages/Contact/ContactPage'
 // import NoMatch from '../components/NoMatch'
 
 // we need to map the `scale` prop we define below

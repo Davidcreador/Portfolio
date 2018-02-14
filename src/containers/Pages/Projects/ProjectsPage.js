@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { data } from './data'
+import { data } from '../data'
 import './ProjectsPage.css'
 
 export default class ProjectsPage extends Component {
