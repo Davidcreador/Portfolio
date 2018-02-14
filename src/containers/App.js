@@ -60,8 +60,12 @@ class App extends Component {
     }
 
     return (
-      <div style={{ paddingLeft: this.state.expanded ? '126px' : '0' }} className="main-wrapper">
-        {this.state.expanded ? <NavBar ref={ref => (this._sideNav = ref)} toogleNav={this.toogleNav} /> : null}
+      <div className={this.state.expanded ? 'main-wrapper fullscreen' : 'main-wrapper'}>
+        <i
+          onClick={this.toogleNav}
+          className={this.state.expanded ? 'fa fa-chevron-left close-btn' : 'fa fa-chevron-right close-btn'}
+        />
+        <NavBar expanded={this.state.expanded} toogleNav={this.toogleNav} />
         <Switch>
           <AnimatedSwitch
             atEnter={bounceTransition.atEnter}

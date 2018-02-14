@@ -28,6 +28,7 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
+  transition: all .3s ease-in-out;
 }
 
 .menu-item.active {
@@ -56,8 +57,9 @@ body {
   height: 90%;
   width: 90%;
   margin: auto;
-  padding-left: 140px;
+  padding-left: 124px;
   box-shadow: 1px 6px 18px rgba(128, 128, 128, 0.1);
+  transition: all .3s ease-in-out;
 }
 
 main {
@@ -84,9 +86,21 @@ main {
 }
 
 .close-btn {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
   position: absolute;
-  right: 16px;
+  left: 10px;
+  top: 10px;
+  z-index: 10;
   cursor: pointer;
+}
+
+.close-btn:after {
+  content: 'Menu';
+  font-size: 1rem;
+  display: inline-block;
+  margin-left: 6px;
 }
 
 .close {
@@ -103,4 +117,12 @@ main {
 
 .socials a {
   color: #4a4a4a;
+}
+
+.offscreen {
+  transform: translateX(-100%);
+}
+
+.fullscreen {
+  padding-left: 0;
 }

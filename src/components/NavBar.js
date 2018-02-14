@@ -1,45 +1,47 @@
-import React, { Component } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom'
 
-export default class NavBar extends Component {
-  render() {
-    return (
-      <aside className="menu">
-        <i onClick={this.props.toogleNav} className="fa fa-chevron-left close-btn" />
-        <ul className="menu-list">
-          <NavLink exact to="/" className="menu-item">
-            Home
-          </NavLink>
-          <NavLink to="/about" className="menu-item">
-            About
-          </NavLink>
-          <NavLink to="/projects" className="menu-item">
-            Projects
-          </NavLink>
-        </ul>
-        <ul className="socials">
-          <li>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/davidcreador" alt="github">
-              <i className="fa fa-github" />
-            </a>
-          </li>
-          <li>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/DaveCreador" alt="faceboook">
-              <i className="fa fa-facebook-official" />
-            </a>
-          </li>
-          <li>
-            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/daveCodes_" alt="twitter">
-              <i className="fa fa-twitter" />
-            </a>
-          </li>
-          <li>
-            <a href="mailto:davidcreador@gmail.com" alt="email">
-              <i className="fa fa-envelope" />
-            </a>
-          </li>
-        </ul>
-      </aside>
-    )
-  }
+const NavBar = ({ expanded }) => (
+  <aside className={!expanded ? 'menu' : 'menu offscreen'}>
+    <ul className="menu-list">
+      <NavLink exact to="/" className="menu-item">
+        Home
+      </NavLink>
+      <NavLink to="/about" className="menu-item">
+        About
+      </NavLink>
+      <NavLink to="/projects" className="menu-item">
+        Projects
+      </NavLink>
+    </ul>
+    <ul className="socials">
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/davidcreador" alt="github">
+          <i className="fa fa-github" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/DaveCreador" alt="faceboook">
+          <i className="fa fa-facebook-official" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/daveCodes_" alt="twitter">
+          <i className="fa fa-twitter" />
+        </a>
+      </li>
+      <li>
+        <a href="mailto:davidcreador@gmail.com" alt="email">
+          <i className="fa fa-envelope" />
+        </a>
+      </li>
+    </ul>
+  </aside>
+)
+
+NavBar.propTypes = {
+  expanded: PropTypes.bool.isRequired,
 }
+
+export default NavBar
