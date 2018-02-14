@@ -1,14 +1,11 @@
-import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default class NavBar extends Component {
   render() {
     return (
       <aside className="menu">
-        <i
-          onClick={this.props.toogleNav}
-          className="fa fa-chevron-left close-btn"
-        />
+        <i onClick={this.props.toogleNav} className="fa fa-chevron-left close-btn" />
         <ul className="menu-list">
           <NavLink exact to="/" className="menu-item">
             Home
@@ -19,35 +16,20 @@ export default class NavBar extends Component {
           <NavLink to="/projects" className="menu-item">
             Projects
           </NavLink>
-          {/* <NavLink to="/contact" className="menu-item">
-            Contact
-          </NavLink> */}
         </ul>
         <ul className="socials">
           <li>
-            <a
-              target="_blank"
-              href="https://github.com/davidcreador"
-              alt="github"
-            >
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/davidcreador" alt="github">
               <i className="fa fa-github" />
             </a>
           </li>
           <li>
-            <a
-              target="_blank"
-              href="https://www.facebook.com/DaveCreador"
-              alt="faceboook"
-            >
+            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/DaveCreador" alt="faceboook">
               <i className="fa fa-facebook-official" />
             </a>
           </li>
           <li>
-            <a
-              target="_blank"
-              href="https://twitter.com/daveCodes_"
-              alt="twitter"
-            >
+            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/daveCodes_" alt="twitter">
               <i className="fa fa-twitter" />
             </a>
           </li>
@@ -58,6 +40,6 @@ export default class NavBar extends Component {
           </li>
         </ul>
       </aside>
-    );
+    )
   }
 }

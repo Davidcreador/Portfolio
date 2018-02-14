@@ -6,7 +6,17 @@
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
     "babel-preset-env": "^1.6.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-html": "^4.0.2",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "prettier": "^1.10.2",
     "react-scripts": "^1.0.17"
   },
   "dependencies": {
@@ -20,11 +30,9 @@
     "react": "^16.2.0",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.2.0",
-    "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "react-router-transition": "^1.2.0",
-    "react-transition-group": "^2.2.1",
-    "redux": "^3.7.2"
+    "react-transition-group": "^2.2.1"
   },
   "scripts": {
     "start": "react-scripts start",

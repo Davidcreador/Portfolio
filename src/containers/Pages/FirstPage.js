@@ -1,11 +1,6 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
-import './FirstPage.css';
-import { Logo } from '../../components/Logo';
-
-// Redux binding
-import * as userActions from '../../actions/user';
+import './FirstPage.css'
+import { Logo } from '../../components/Logo'
 
 class FirstPage extends Component {
   render() {
@@ -20,15 +15,4 @@ class FirstPage extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  user: state.user
-})
-
-const mapDispatchToProps = dispatch => ({
-  userActions: bindActionCreators(userActions, dispatch)
-})
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(FirstPage)
+export default FirstPage
