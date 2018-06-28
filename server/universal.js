@@ -21,10 +21,7 @@ module.exports = function universalLoader(req, res) {
     const store = configureStore()
     const markup = renderToString(
       <Provider store={store}>
-        <StaticRouter
-          location={req.url}
-          context={context}
-        >
+        <StaticRouter location={req.url} context={context}>
           <App />
         </StaticRouter>
       </Provider>
@@ -36,7 +33,6 @@ module.exports = function universalLoader(req, res) {
     } else {
       // we're good, send the response
       const RenderedApp = htmlData.replace('{{SSR}}', markup)
-      console.log(RenderedApp);
       res.send(RenderedApp)
     }
   })

@@ -51,12 +51,11 @@ const AboutPage = () => (
       <h1 className="about-page-title title">I'm David Pastor</h1>
       <div className="about-content-body">
         <p>
-          I am <strong>self-taught Software developer & Designer</strong>. <br /> Started as a graphic designer and then
-          jumped into development. Now I walk the line of being both. I work as a Frontend/Backend(NodeJs) - developer.
-          I am responsible, honest, serious, curious, fast-learner and loyal, just some characteristics of many more. I
-          love to workout/exercise, also I am a musician and for me it is very important taking care of the people
-          around me. Many of my work have been focused on developing and supporting websites focused on UI, usability
-          and helping people solve their problems. I live in Costa Rica and I've been doing this for 4+ years.
+          I am <strong>self-taught Software developer & Designer</strong>. <br /> I started as a graphic designer and
+          then jumped into development. Now I walk the line of being both. I work as a Frontend/Backend(NodeJs) -
+          developer. I am responsible, honest, serious, curious, fast-learner and loyal. Many of my work has been
+          focused on developing and supporting websites/applications focused on UI, usability and helping people solve
+          their problems. I live in Costa Rica and I've been doing this for 4+ years.
         </p>
       </div>
 
@@ -70,19 +69,19 @@ const AboutPage = () => (
               <h3 className="status-item-title">Freelance</h3>
               <span className="status-state">Current</span>
             </div>
-            <p>Front-end development on a reliable review database for prospective NYC renters.</p>
+            <p>Full-stack Software Engineer at NTTDATA and Software developer consultant at Pamperedchef.com</p>
           </li>
           <li className="status-item">
             <div className="header-status-item">
               <h3 className="status-item-title">React Native/Web developer</h3>
             </div>
-            <p>Web and Mobile development in La Creativeria.</p>
+            <p>Web and Mobile development at La Creativeria.</p>
           </li>
           <li className="status-item">
             <div className="header-status-item">
               <h3 className="status-item-title">FullStack developer</h3>
             </div>
-            <p>Fullstack development with NodeJs and Front-End technologies in Interaction Agency.</p>
+            <p>Fullstack development with NodeJs and Front-End technologies at Interaction Agency.</p>
           </li>
         </ul>
       </div>

@@ -44,7 +44,7 @@ const NavBar = ({ expanded }) => (
 )
 
 NavBar.propTypes = {
-  expanded: PropTypes.bool.isRequired,
+  expanded: PropTypes.bool.isRequired
 }
 
 export default NavBar

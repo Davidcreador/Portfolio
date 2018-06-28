@@ -16,7 +16,6 @@ const index = require('./routes/index')
 const api = require('./routes/api')
 const universalLoader = require('./universal')
 
-
 const app = express()
 
 // Support Gzip
