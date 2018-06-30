@@ -83,6 +83,12 @@ const AboutPage = () => (
             </div>
             <p>Fullstack development with NodeJs and Front-End technologies at Interaction Agency.</p>
           </li>
+          <li className="status-item">
+            <div className="header-status-item">
+              <h3 className="status-item-title">Designer & Web developer</h3>
+            </div>
+            <p>Web design and Front-End technologies at TEAH720 Agency.</p>
+          </li>
         </ul>
       </div>
 

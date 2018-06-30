@@ -24,16 +24,20 @@
     "body-parser": "^1.18.3",
     "bulma": "^0.7.1",
     "compression": "^1.7.2",
+    "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "ignore-styles": "^5.0.1",
+    "medium-sdk": "^0.0.4",
     "morgan": "^1.9.0",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "react-router-transition": "^1.2.0",
-    "react-transition-group": "^2.4.0"
+    "react-transition-group": "^2.4.0",
+    "redux": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

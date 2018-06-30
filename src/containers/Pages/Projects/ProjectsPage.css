@@ -6,6 +6,7 @@
 
 .project-item {
   background-color: white;
+  height: 100%;
   display: inline-flex;
   overflow: hidden;
   border-radius: 10px;

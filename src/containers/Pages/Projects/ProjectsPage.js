@@ -5,7 +5,10 @@ import './ProjectsPage.css'
 export default class ProjectsPage extends Component {
   renderProjects = () =>
     data.projects.map((e, i) => (
-      <li key={i} className="column is-one-third">
+      <li
+        key={i}
+        className="column is-three-quarters-mobile is-four-fifths-tablet is-half-desktop is-one-third-widescreen is-one-third-fullhd"
+      >
         <div className="project-item">
           <div className="card bm--card-equal-height">
             <div className="card-image">
@@ -43,7 +46,7 @@ export default class ProjectsPage extends Component {
       <div className="projects-page">
         <h1 className="title">Projects</h1>
         <div className="projects-list">
-          <ul className="columns is-multiline is-variable is-2">{this.renderProjects()}</ul>
+          <ul className="columns is-multiline is-mobile">{this.renderProjects()}</ul>
         </div>
       </div>
     )

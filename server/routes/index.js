@@ -1,8 +1,8 @@
 const express = require('express')
 const router = express.Router()
 
-const universalLoader = require('../universal')
-
-router.get('/', universalLoader)
+router.get('/', (req, res) => {
+  res.send('Api is working')
+})
 
 module.exports = router
