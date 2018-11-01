@@ -66,10 +66,16 @@ const AboutPage = () => (
         <ul className="current-status-items">
           <li className="status-item status-active">
             <div className="header-status-item">
-              <h3 className="status-item-title">Freelance</h3>
+              <h3 className="status-item-title">Senior Front-End Developer</h3>
               <span className="status-state">Current</span>
             </div>
-            <p>Full-stack Software Engineer at NTTDATA and Software developer consultant at Pamperedchef.com</p>
+            <p>Software Developer at TheHangar.cr</p>
+          </li>
+          <li className="status-item">
+            <div className="header-status-item">
+              <h3 className="status-item-title">Full-stack Software Developer</h3>
+            </div>
+            <p>Full-stack Software Developer at NTTDATA and consultant at Pamperedchef.com</p>
           </li>
           <li className="status-item">
             <div className="header-status-item">
